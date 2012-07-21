@@ -1,0 +1,13 @@
+CACHE MANIFEST
+
+#version 0.1
+
+#images/cover-left.jpg
+#images/cover-right.jpg
+js/zepto.min.js
+phonegap.0.9.6.min.js
+
+
+# index.html
+# css/style.css
+# js/flip.js

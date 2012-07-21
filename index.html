@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+    <meta charset="utf-8">
+    <title>inFAMOUS 2</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link rel="apple-touch-startup-image" href="images/Default~ipad.png" />
+	<!-- For iPhone 4 -->
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-large.png">
+	<!-- For iPad 1-->
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-med.png">
+	<!-- For iPhone 3G, iPod Touch and Android -->
+	<link rel="apple-touch-icon" href="images/apple-touch-icon-small.png">
+
+	<!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+	-->
+	<!-- If you application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+	<script src="phonegap.0.9.6.min.js"></script>
+    <script>
+	// If you want to prevent dragging, uncomment this section
+	function preventBehavior(e) 
+	{ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	/*
+	function handleOpenURL(url)
+	{
+		// TODO: do something with the url passed in.
+	}
+	*/
+	
+	function onBodyLoad()
+	{		
+		setTimeout(function(){
+			// Hide the address bar!
+			window.scrollTo(0, 1);
+		}, 0);
+		document.addEventListener("deviceready",onDeviceReady,false);
+	}
+	
+	/* When this function is called, PhoneGap has been initialized and is ready to roll */
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	function onDeviceReady()
+	{
+		// do your thing!
+	}
+    </script>
+  </head>
+  <body onload="onBodyLoad()" id="main">
+	  	<div id="book">
+	  		<section class="cover">
+  				<img src="images/cover-left.jpg" alt="Infamous 2 guide" />
+			</section>
+	  		<section id="two">
+	  			<div class="front cover">
+	  				<img src="images/cover-right.jpg" alt="Infamous 2 guide" />
+	  			</div>
+	  			<div class="back">
+	  				<h1>Infamous 2 Wiki Guide</h1>
+	  				<p>The first Infamous concluded with a dark prophecy: Electrically supercharged Cole MacGrath is the only one who can take on "The Beast" when it shows up sometime in the future. Well, the future is now, and a towering lava man, having razed Empire City, is leaving a trail of burning rubble across the nation -- and its heading to Cole's new digs in New Marais. Your task in Infamous 2 is to keep the beast off of your back. To make this easier we've provided a walkthrough for each mission, maps to powerups like Blast Shards and much more.</p>
+	  			</div>
+	  		</section>
+	  		<section id="three">
+	  			<div class="front">
+	  				<h1>page 3 content</h1>
+	  				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+	  			</div>
+	  			<div class="back">
+	  				<h1>page 3 backside content</h1>
+	  				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+	  			</div>
+	  		</section>
+	  		<section id='four'>
+	  			<div class="front">
+	  				<h1>page 4 content</h1>
+	  				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+	  			</div>
+	  			<div class="back">
+	  				<h1>page 4 backside content</h1>
+	  				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+	  			</div>
+	  		</section>
+	  		<section>
+	  			<h2>Thanks for checking out the inFAMOUS 2 wiki</h2>
+	  			<p>Please visit <a href="http://ign.com">ign.com</a> for more information</p>
+	  		</section>
+	  	</div><!--end container-->	
+  </body>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>-->
+  <script src="js/zepto.min.js"></script>
+  <script src="js/flip.js"></script>
+</html>
