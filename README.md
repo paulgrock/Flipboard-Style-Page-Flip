@@ -1,1 +1,1 @@
-Early Prototype for a flipboard style page flip animation using HTML/CSS/JS
+Early Prototype for a flipboard style page flip animation using HTML/CSS/JS. Look through JS to mae it at least decent.
